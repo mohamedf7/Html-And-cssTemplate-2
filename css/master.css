@@ -40,16 +40,31 @@ body {
 .section-heading h2::before {
     content: '';
     position: absolute;
+    background-color: black;
     height: 2px;
     width: 120px;
-    background-color: #333333;
     bottom: -30px;
-
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section-heading h2::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+    bottom: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section-heading p {
     width: 550px;
-    margin: 0 auto 100px;
-    line-height: 2;
-    color: var(--p-color);
     max-width: 100%;
+    margin: 0 auto 100px;
+    color: var(--p-color);
+    line-height: 2;
 }
 ul {
     list-style: none;
